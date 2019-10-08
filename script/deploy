@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh jenkins@159.89.205.182 <<EOF
+ cd /srv/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
