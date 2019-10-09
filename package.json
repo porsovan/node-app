@@ -4,7 +4,8 @@
   "description": "node app with ci/cd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "test": "mocha 'test/test.js'" //path to your test file
   },
   "repository": {
     "type": "git",
